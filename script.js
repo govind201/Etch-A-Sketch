@@ -4,10 +4,6 @@ const resetBtn = document.querySelector("#reset-btn");
 function createGrid(size) {
     container.innerHTML = "";
     const cellSize = 960 / size;
-
-    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
-    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-
     for (let i = 0; i < size * size; i++) {
         const div = document.createElement("div");
         div.classList.add("square");
@@ -27,8 +23,8 @@ function createGrid(size) {
 createGrid(16);
 
 resetBtn.addEventListener("click", () => {
-    let newSize = prompt("Enter new size (max 100):");
-    if (newSize !== null && newSize <= 100) {
+    let newSize = prompt("Enter new size (max 60):");
+    if (newSize !== null && newSize <= 60) {
         createGrid(newSize);
     }
 });
