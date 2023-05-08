@@ -1,7 +1,7 @@
 const container = document.querySelector("#container");
 const resetBtn = document.querySelector("#reset-btn");
 
-function createGrid(size) {
+const createGrid = (size) => {
     container.innerHTML = "";
     const cellSize = 960 / size;
     for (let i = 0; i < size * size; i++) {
