@@ -20,7 +20,8 @@ const createGrid = (size) => {
     });
 }
 
-createGrid(16);
+const initialGridSize = 16;
+createGrid(initialGridSize);
 
 resetBtn.addEventListener("click", () => {
     let newSize = prompt("Enter new size (max 60):");
@@ -28,3 +29,4 @@ resetBtn.addEventListener("click", () => {
         createGrid(newSize);
     }
 });
+ 
