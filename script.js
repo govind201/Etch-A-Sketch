@@ -29,4 +29,3 @@ resetBtn.addEventListener("click", () => {
         createGrid(newSize);
     }
 });
- 
