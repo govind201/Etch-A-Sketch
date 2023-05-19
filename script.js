@@ -3,13 +3,14 @@ const resetBtn = document.querySelector("#reset-btn");
 
 const createGrid = (size) => {
     container.innerHTML = "";
-    const cellSize = 960 / size;
+    const gridTotalSize = 960;
+    const cellSize = gridTotalSize / size;
     for (let i = 0; i < size * size; i++) {
-        const div = document.createElement("div");
-        div.classList.add("square");
-        div.style.width = `${cellSize}px`;
-        div.style.height = `${cellSize}px`;
-        container.appendChild(div);
+        const cell = document.createElement("div");
+        cell.classList.add("square");
+        cell.style.width = `${cellSize}px`;
+        cell.style.height = `${cellSize}px`;
+        container.appendChild(cell);
     }
 
     const squares = document.querySelectorAll(".square");
