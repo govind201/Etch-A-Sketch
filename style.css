@@ -20,7 +20,8 @@ body {
 	border: 1px solid black;
 }
 
-#button-container, h1 {
+#button-container,
+h1 {
 	text-align: center;
 	margin-top: 30px;
 }
